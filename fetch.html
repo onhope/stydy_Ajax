@@ -12,10 +12,12 @@
     // })
 
     // Ascnchronous 
-    function callbackme(){
-      console.log('responese end');
-    }
-      fetch('html').then(callbackme);
+      fetch('javascript').then(function(response){
+        console.log(response.status);
+        if(response.status == '404') {
+          alert('Not Found')
+        }
+      });
       console.log(1);
       console.log(2);
     ">
